@@ -1,273 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Academia Brasil Fit - Estrutura completa com 3 andares: térreo aparelhos de superiores, 2º andar aparelhos de perna e 3º andar luta. Transforme seu corpo e sua vida!">
+    <meta name="description" content="Academia Brasil Fit em São José dos Campos com estrutura completa, treinos premium e ambiente moderno.">
+    <meta name="theme-color" content="#111111">
     <title>Academia Brasil Fit</title>
+    <link rel="icon" type="image/png" href="./assets/icone_dark.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .footer-bottom a {
-            text-decoration: none;
-        }
-    </style>
 </head>
-
 <body>
-    <!-- ========== HEADER ========== -->
     <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <!-- EDITÁVEL: Nome da academia -->
-                <a href="#inicio" class="logo"><img src="./assets/logo-pequeno.png" alt=""></a>
-                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
-                    <span></span><span></span><span></span>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Estrutura</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+        <div class="container nav-shell">
+            <a href="#inicio" class="logo" aria-label="Academia Brasil Fit">
+                <img src="./assets/logo-pequeno.png" alt="Logo Academia Brasil Fit">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Estrutura</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                <i data-lucide="moon-star"></i>
+            </button>
         </div>
     </header>
 
-    <!-- ========== HERO ========== -->
-    <section class="hero" id="inicio">
-        <div class="hero-background">
-            <img src="./assets/logo.png" alt="Academia com equipamentos" class="hero-bg-image">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-
-                <h1>Transforme seu corpo e sua vida na Brasil Fit</h1>
-                <p class="hero-subtitle">Sua academia de confiança com estrutura completa de 3 andares e ambiente
-                    acolhedor. Seu resultado é nossa prioridade!</p>
-                <div class="hero-buttons">
-                    <a href="#contato" class="btn btn-primary">Venha Conhecer</a>
-                    <a href="https://wa.me/5512991246833" class="btn btn-secondary" target="_blank">Falar no
-                        WhatsApp</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== SOBRE ========== -->
-    <section class="sobre" id="sobre">
-        <div class="container">
-            <div class="section-header">
-                <h2>Sobre a Brasil Fit</h2>
-                <p>Mais que uma academia, um espaço de transformação e bem-estar</p>
-            </div>
-            <div class="sobre-content">
-                <div class="sobre-image">
-                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80"
-                        alt="Área de musculação da academia" class="sobre-img">
-                </div>
-                <div class="sobre-text-content">
-                    <div class="sobre-text">
-                        <p>A <strong>Brasil Fit</strong> Oferece estrutura completa e de qualidade para você
-                            alcançar seus objetivos. Com 3 andares especializados, equipamentos modernos e um ambiente
-                            acolhedor, somos a escolha perfeita para sua jornada de fitness.</p>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Academia Brasil Fit • São José dos Campos</p>
+                    <h1>Seu treino evolui com a sua disciplina.</h1>
+                    <p class="hero-subtitle">Ambiente premium, equipamentos modernos e uma estrutura completa para você crescer mais forte, mais leve e mais confiante.</p>
+                    <div class="hero-buttons">
+                        <a href="#contato" class="btn btn-primary">Venha conhecer</a>
+                        <a href="https://wa.me/5512991246833" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Converse no WhatsApp</a>
                     </div>
-                    <div class="sobre-features">
-                        <div class="feature">
-                            <div class="feature-icon">🏋️</div>
-                            <h3>Estrutura Completa</h3>
-                            <p>3 andares dedicados para diferentes modalidades</p>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">👨‍🏫</div>
-                            <h3>Ambiente Acolhedor</h3>
-                            <p>Espaço inclusivo para todos os níveis</p>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">⚡</div>
-                            <h3>Equipamentos Modernos</h3>
-                            <p>Aparelhos de qualidade para seu treino</p>
-                        </div>
+                    <div class="hero-highlights">
+                        <span><i data-lucide="dumbbell"></i> Treinos completos</span>
+                        <span><i data-lucide="sparkles"></i> Ambiente premium</span>
+                        <span><i data-lucide="clock-3"></i> Horários flexíveis</span>
+                    </div>
+                </div>
+
+                <div class="hero-card reveal">
+                    <div class="hero-card-head">
+                        <span class="pill">Treino inteligente</span>
+                        <h2>Estrutura completa em 3 andares</h2>
+                    </div>
+                    <div class="hero-metrics">
+                        <article>
+                            <strong>3</strong>
+                            <span>Andares especializados</span>
+                        </article>
+                        <article>
+                            <strong>24/7</strong>
+                            <span>Suporte e acompanhamento</span>
+                        </article>
+                        <article>
+                            <strong>100%</strong>
+                            <span>Foco em performance</span>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== ESTRUTURA / ANDARES ========== -->
-    <section class="servicos" id="servicos">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nossa Estrutura</h2>
-                <p>Conheça nossos 3 andares especializados</p>
-            </div>
-            <div class="servicos-grid">
-                <div class="servico-card">
-                    <div class="servico-image">
-                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=400&q=80"
-                            alt="Térreo - Aparelhos de superiores">
-                    </div>
-                    <div class="servico-content">
-                        <h3>Térreo</h3>
-                        <p>Aparelhos de superiores. Área completa com equipamentos para braços, ombros e tronco para um
-                            treino eficiente.</p>
-                        <span class="preco">Incluso</span>
-                    </div>
+        <section class="section section-light" id="sobre">
+            <div class="container about-grid">
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=900&q=80" alt="Área de musculação da academia">
                 </div>
-                <div class="servico-card">
-                    <div class="servico-image">
-                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80"
-                            alt="2º Andar - Aparelhos de perna">
-                    </div>
-                    <div class="servico-content">
-                        <h3>2º Andar</h3>
-                        <p>Aparelhos de perna. Estrutura especializada com equipamentos para membros inferiores, glúteos
-                            e panturrilhas.</p>
-                        <span class="preco">Incluso</span>
-                    </div>
-                </div>
-                <div class="servico-card">
-                    <div class="servico-image">
-                        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=400&q=80"
-                            alt="3º Andar - Luta">
-                    </div>
-                    <div class="servico-content">
-                        <h3>3º Andar</h3>
-                        <p>Luta. Espaço dedicado para artes marciais e modalidades de combate. Ambiente ideal para quem
-                            busca treino de luta.</p>
-                        <span class="preco">Incluso</span>
+                <div class="about-copy reveal">
+                    <p class="eyebrow eyebrow-dark">Sobre a Brasil Fit</p>
+                    <h2>Mais do que uma academia: uma experiência de evolução.</h2>
+                    <p>A Brasil Fit une estrutura completa, ambiente acolhedor e uma proposta premium para quem busca resultados reais com disciplina e consistência.</p>
+                    <div class="feature-list">
+                        <article class="feature-card">
+                            <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                            <div>
+                                <h3>Estrutura completa</h3>
+                                <p>3 andares dedicados a musculação, pernas e luta.</p>
+                            </div>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon"><i data-lucide="users"></i></div>
+                            <div>
+                                <h3>Ambiente acolhedor</h3>
+                                <p>Espaço moderno e inspirador para todos os níveis.</p>
+                            </div>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon"><i data-lucide="zap"></i></div>
+                            <div>
+                                <h3>Performance</h3>
+                                <p>Equipamentos de qualidade para treinos mais eficientes.</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== DEPOIMENTOS ========== -->
-    <section class="depoimentos" id="depoimentos">
-        <div class="container">
-            <div class="section-header">
-                <h2>O Que Nossos Alunos Dizem</h2>
-                <p>Histórias de quem confia no nosso espaço</p>
-            </div>
-            <div class="depoimentos-grid">
-                <div class="depoimento-card">
-                    <div class="depoimento-header">
-                        <div class="avatar">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
-                                alt="João">
+        <section class="section section-dark" id="servicos">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="eyebrow">Nossa estrutura</p>
+                    <h2>Espaços pensados para cada etapa da sua evolução.</h2>
+                    <p>Do treino funcional à luta, cada andar foi planejado para oferecer intensidade, conforto e foco.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="service-card reveal">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80" alt="Térreo com aparelhos de superiores">
+                        <div class="card-body">
+                            <h3>Térreo</h3>
+                            <p>Aparelhos de superiores e treino completo para braços, ombros e tronco.</p>
+                            <span class="tag">Incluso</span>
                         </div>
-                        <div class="depoimento-info">
-                            <h4>João Silva</h4>
-                            <span>Aluno há 2 anos</span>
+                    </article>
+                    <article class="service-card reveal">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="Segundo andar com aparelhos de pernas">
+                        <div class="card-body">
+                            <h3>2º andar</h3>
+                            <p>Área dedicada a pernas, glúteos e panturrilhas com foco em força.</p>
+                            <span class="tag">Incluso</span>
                         </div>
-                    </div>
-                    <p>"Melhor academia! Equipamentos em perfeito estado, ambiente limpo e motivador. Recomendo!"</p>
-                    <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                    </article>
+                    <article class="service-card reveal">
+                        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=600&q=80" alt="Terceiro andar com espaço de luta">
+                        <div class="card-body">
+                            <h3>3º andar</h3>
+                            <p>Espaço de luta e treino de combate para quem busca intensidade e técnica.</p>
+                            <span class="tag">Incluso</span>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== CONTATO E MAPA ========== -->
-    <section class="contato" id="contato">
-        <div class="container">
-            <div class="section-header">
-                <h2>Venha Conhecer!</h2>
-                <p>Entre em contato ou visite nossa academia</p>
-            </div>
-            <div class="contato-content">
-                <div class="contato-info">
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <a href="https://wa.me/5512991246833" target="_blank">
-                                <img src="https://img.icons8.com/?size=45&id=QkXeKixybttw&format=png&color=000000"
-                                    alt="">
-                            </a>
-
-                        </div>
-                        <div>
-                            <h4>WhatsApp</h4>
-                            <p>(12) 99124-6833</p>
-                        </div>
-
-                    </div>
-
-                    <div class="info-item">
-                        <div class="info-icon"><a href="https://instagram.com/_brasilfit" target="_blank"
-                                rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/?size=45&id=Xy10Jcu1L2Su&format=png&color=000000"
-                                    alt="Instagram">
-                            </a>
-                        </div>
-                        <div>
-                            <h4>Instagran</h4>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="info-item">
-                        <div class="info-icon"><img
-                                src="https://img.icons8.com/?size=45&id=uVHiOKL11CSm&format=png&color=000000" alt="">
-                        </div>
-                        <div>
-                            <h4>Endereço</h4>
-                            <p>Av. Fusanobu Yokota, 211 - Jardim Terras do Sul<br>São José dos Campos - SP,
-                                12236-075</p>
-                        </div>
-                    </div>
-
-                     <div class="info-item">
-                        <div class="info-icon"><img
-                                src="https://img.icons8.com/?size=45&id=63250&format=png&color=000000" alt="">
-                        </div>
-                        <div>
-                            <h4>Horário de Funcionamento</h4>
-                            <p>Seg a sex 5h às 22h<br>Sab das 8h às 13h</p>
-                        </div>
-                    </div>
-
-                    
+        <section class="section section-light">
+            <div class="container dashboard-grid">
+                <div class="dashboard-summary reveal">
+                    <p class="eyebrow eyebrow-dark">Performance da marca</p>
+                    <h2>Uma experiência premium, organizada e inspiradora.</h2>
+                    <p>Com uma identidade forte e visual impactante, a Brasil Fit transmite energia, disciplina e evolução em cada detalhe.</p>
                 </div>
-                <div class="contato-mapa">
-                    <div class="mapa-embed">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9842.576596929734!2d-45.90003861140794!3d-23.24649589598583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4aae17da0189%3A0x68a8bfe44690b9cf!2sAcademia%20Brasil%20Fit!5e1!3m2!1spt-BR!2sbr!4v1783432874480!5m2!1spt-BR!2sbr"
-                            width="550" height="380" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
-                        </iframe>
-                    </div>
+                <div class="stats-grid reveal">
+                    <article class="stat-card">
+                        <strong>+250</strong>
+                        <span>Alunos ativos</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong>R$ 18k</strong>
+                        <span>Mensalidades</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong>35</strong>
+                        <span>Treinos ativos</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong>4.9/5</strong>
+                        <span>Avaliações</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong>120+</strong>
+                        <span>Check-ins semanais</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong>R$ 90k</strong>
+                        <span>Receita mensal</span>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== FOOTER ========== -->
+        <section class="section section-dark" id="depoimentos">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="eyebrow">Depoimentos</p>
+                    <h2>Quem treina aqui sente a diferença.</h2>
+                    <p>Resultados, motivação e uma comunidade que cresce junto.</p>
+                </div>
+                <div class="card-grid testimonials-grid">
+                    <article class="testimonial-card reveal">
+                        <p>“A estrutura é excelente, os treinos são bem organizados e o ambiente é muito motivador.”</p>
+                        <div class="testimonial-author">
+                            <strong>Camila A.</strong>
+                            <span>Cliente há 1 ano</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <p>“Sinto que a infraestrutura realmente me ajuda a evoluir com mais disciplina e foco.”</p>
+                        <div class="testimonial-author">
+                            <strong>Rafael S.</strong>
+                            <span>Cliente há 6 meses</span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <p>“A academia transmite energia e profissionalismo em todos os detalhes.”</p>
+                        <div class="testimonial-author">
+                            <strong>Bruna M.</strong>
+                            <span>Cliente há 8 meses</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light" id="contato">
+            <div class="container contact-grid">
+                <div class="contact-info reveal">
+                    <p class="eyebrow eyebrow-dark">Entre em contato</p>
+                    <h2>Pronto para transformar sua rotina?</h2>
+                    <p>Agende uma visita, conheça a estrutura e descubra um espaço feito para sua evolução.</p>
+                    <div class="contact-list">
+                        <a class="contact-item" href="https://wa.me/5512991246833" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="message-circle"></i>
+                            <span>(12) 99124-6833</span>
+                        </a>
+                        <a class="contact-item" href="https://instagram.com/_brasilfit" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="instagram"></i>
+                            <span>@_brasilfit</span>
+                        </a>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Av. Fusanobu Yokota, 211 - São José dos Campos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map reveal">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9842.576596929734!2d-45.90003861140794!3d-23.24649589598583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4aae17da0189%3A0x68a8bfe44690b9cf!2sAcademia%20Brasil%20Fit!5e1!3m2!1spt-BR!2sbr!4v1783432874480!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo"><img src="./assets/logo-pequeno.png" alt=""></div>
-                <p>Sua academia com estrutura completa.</p>
-                <div class="footer-links">
-                    <a href="#inicio">Início</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#servicos">Estrutura</a>
-                    <a href="#contato">Contato</a>
-                </div>
+        <div class="container footer-shell">
+            <div class="footer-brand">
+                <img src="./assets/logo-pequeno.png" alt="Logo da Academia Brasil Fit">
+                <p>Sua academia premium para evoluir com força, disciplina e foco.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Brasil Fit. Todos os direitos reservados.</p>
-                <p>Desenvolvido por <a href="#" style="text-decoration: none;">Guilherme Moretta</a></p>
+            <div class="footer-links">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Estrutura</a>
+                <a href="#contato">Contato</a>
             </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="script.js"></script>
 </body>
-
 </html>

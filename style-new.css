@@ -7,7 +7,6 @@
     --surface-alt: #f0eee8;
     --border: rgba(17, 17, 17, 0.12);
     --text: #111111;
-    --surface-text: #111111; /* texto sobre superfícies claras */
     --text-secondary: #5a5a5a;
     --shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
     --shadow-strong: 0 22px 56px rgba(0, 0, 0, 0.12);
@@ -23,7 +22,6 @@ body.dark-theme {
     --surface-alt: #212121;
     --border: rgba(255, 255, 255, 0.12);
     --text: #f5f5f2;
-    --surface-text: #f5f5f2; /* texto sobre superfícies no tema escuro */
     --text-secondary: #bfbfbf;
     --shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
     --shadow-strong: 0 24px 60px rgba(0, 0, 0, 0.34);
@@ -184,12 +182,13 @@ body.dark-theme .header {
     font-size: 0.92rem;
 }
 .hero-card {
-    background: var(--surface);
-    color: var(--surface-text);
+    background: rgba(255,255,255,0.96);
+    color: var(--text);
     border-radius: var(--radius);
     padding: 1.5rem;
     box-shadow: var(--shadow-strong);
 }
+body.dark-theme .hero-card { background: rgba(255,255,255,0.96); }
 .hero-card-head h2 { margin-bottom: 1rem; font-size: 1.8rem; }
 .pill {
     display: inline-flex;
